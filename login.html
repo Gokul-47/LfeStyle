@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-login">
+  <nav class="nav-wrapper">
+    <div class="nav-container">
+      <div class="logo-combo">
+        <img src="assets/logo.png" alt="Stackly logo" class="logo-img-white">
+        <span class="logo-text">Stackly</span>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="index.html" class="dropdown-trigger">Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="menu-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section-dark page-hero">
+      <div class="hero-full">
+        <div class="hero-bg img-overlay">
+          <img src="assets/b11.jpg" alt="Login - Replace with your image">
+        </div>
+        <div class="container hero-content">
+          <span class="badge reveal">Member Access</span>
+          <h1 class="section-title reveal">Welcome Back</h1>
+          <p class="section-subtitle reveal" style="max-width: 450px;">Sign in to access your Stackly account and personalized resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light">
+      <div class="container reveal">
+        <div class="split-img-right" style="align-items: flex-start;">
+          <div class="reveal-left" style="max-width: 420px;">
+            <form style="background: var(--gray-900); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.06);">
+              <h2 style="font-family: var(--font-display); text-align: center; margin-bottom: 1.5rem; color: var(--white);">Sign In</h2>
+              <input type="email" placeholder="Email address" required style="margin-bottom: 1rem;">
+              <input type="password" placeholder="Password" required style="margin-bottom: 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <label style="color: var(--gray-400); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;"><input type="checkbox"> Remember me</label>
+                <a href="#" style="color: var(--white); font-size: 0.9rem;">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Login</button>
+              <p style="text-align: center; margin-top: 1rem; color: var(--gray-400); font-size: 0.9rem;">Don't have an account? <a href="sign-up.html" style="color: var(--white);">Sign up</a></p>
+            </form>
+          </div>
+          <div class="img-wrap reveal-right" style="aspect-ratio: 4/5; flex: 1; max-width: 450px;">
+            <img src="assets/b2.jpg" alt="Login - Replace with your image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+  
+
+    
+    <section class="section-dark">
+      <div class="container reveal">
+        <h2 class="section-title">Social Login</h2>
+        <p class="section-subtitle" style="margin-bottom: 1.5rem;">Sign in quickly with your preferred account.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button class="btn btn-outline anim-float" id="google-login-btn">Continue with Google</button>
+          <button class="btn btn-outline" id="apple-login-btn">Continue with Apple</button>
+        </div>
+      </div>
+    </section>
+
+
+ 
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo-combo"><img src="assets/logo.png" alt="Stackly logo" class="logo-img-white"><span class="logo-text">Stackly</span></div><p>Your guide to intentional living. Wellness, design, and everyday habits for a better life.</p></div>
+      <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About</a></li><li><a href="service.html">Services</a></li></ul></div>
+      <div class="footer-links"><h4>Connect</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html">Login</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Stackly. All rights reserved.</div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var googleBtn = document.getElementById('google-login-btn');
+      var appleBtn = document.getElementById('apple-login-btn');
+      if (googleBtn) googleBtn.addEventListener('click', function() { window.location.href = '404.html'; });
+      if (appleBtn) appleBtn.addEventListener('click', function() { window.location.href = '404.html'; });
+    });
+  </script>
+</body>
+</html>
