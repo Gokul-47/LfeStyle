@@ -69,8 +69,4 @@ function setActiveNav() {
   if (trigger) trigger.classList.toggle('active', isHome || isHome2);
 }
 
-function initForms() {
-  document.querySelectorAll('form').forEach(function(f) {
-    f.addEventListener('submit', function(e) { e.preventDefault(); alert('Thanks! (Demo)'); });
-  });
-}
+
