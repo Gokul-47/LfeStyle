@@ -90,7 +90,7 @@ body { font-family: var(--font-body); background: var(--black); color: var(--whi
 
 /* Sections */
 section { padding: 3.5rem 1.5rem 2.5rem 1.5rem; position: relative; overflow: hidden; min-height: unset; }
-.section-dark { background: var(--black); color: var(--white); }
+.section-dark { background: var(--black); color: var(--white);margin-top: 2rem; }
 .section-light { background: var(--white); color: var(--black); }
 .section-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 600; line-height: 1.2; margin-bottom: 1rem;margin-top: 2rem; letter-spacing: -0.02em; }
 .section-subtitle { font-size: 1.05rem; color: var(--gray-400); line-height: 1.7; max-width: 600px; }
@@ -243,7 +243,7 @@ body.page-signup .btn { border-radius: 12px; }
 
 .btn { display: inline-block; padding: 0.9rem 2rem; font-family: var(--font-body); font-weight: 600; font-size: 0.95rem; text-decoration: none; border-radius: 8px; transition: all 0.3s; cursor: pointer; border: 2px solid transparent; }
 .btn-primary { background: var(--white); color: var(--black); border-color: var(--white); }
-.btn-primary:hover { background: transparent; color: var(--white); }
+.btn-primary:hover { background: transparent; color: var(--gray-600); }
 .btn-outline { background: transparent; color: var(--white); border-color: var(--white); }
 .btn-outline:hover { background: var(--white); color: var(--black); }
 .section-light .btn-outline { color: var(--black); border-color: var(--black); }
